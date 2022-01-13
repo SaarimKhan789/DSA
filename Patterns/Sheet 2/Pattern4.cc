@@ -4,9 +4,11 @@ using namespace std;
 int main(){
 
     int spaces=0;
+    int n;
+    cin>>n;
    
 
-    for(int i=1;i<=5;i++){
+    for(int i=1;i<=n;i++){
 
         for(int k=1;k<=spaces;k++){
             cout<<" ";
@@ -18,13 +20,13 @@ int main(){
         spaces++;
         cout<<endl;
     }
-    spaces=4;
-    for(int i=1;i<=4;i++){
+    spaces=n-1;
+    for(int i=1;i<=n-1;i++){
 
         for(int k=1;k<=spaces;k++){
             cout<<" ";
         }
-        for(int j=4;j>=i;j--){
+        for(int j=n-1;j>=i;j--){
             cout<<"*";
         }
 
